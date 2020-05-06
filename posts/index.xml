@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Mogeko`s Blog</title>
+    <link>https://q936152787.github.io/posts/</link>
+    <description>Recent content in Posts on Mogeko`s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 06 May 2020 20:35:06 +0800</lastBuildDate>
+    
+	<atom:link href="https://q936152787.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>123</title>
+      <link>https://q936152787.github.io/2020/123/</link>
+      <pubDate>Wed, 06 May 2020 20:35:06 +0800</pubDate>
+      
+      <guid>https://q936152787.github.io/2020/123/</guid>
+      <description>12345上山打老虎 23456老虎被打跑</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://q936152787.github.io/2020/about/</link>
+      <pubDate>Wed, 06 May 2020 20:31:24 +0800</pubDate>
+      
+      <guid>https://q936152787.github.io/2020/about/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
