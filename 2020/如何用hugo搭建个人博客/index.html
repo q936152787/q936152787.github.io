@@ -9,9 +9,9 @@
   
   
   
-  <link rel="prev" href="https://q936152787.github.io/2020/about/" />
-  <link rel="next" href="https://q936152787.github.io/2020/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" />
-  <link rel="canonical" href="https://q936152787.github.io/2020/123/" />
+  <link rel="prev" href="https://q936152787.github.io/2020/123/" />
+  
+  <link rel="canonical" href="https://q936152787.github.io/2020/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -22,10 +22,10 @@
   <title>
        
        
-           123 | Mogeko`s Blog
+           如何用hugo搭建个人博客 | Mogeko`s Blog
        
   </title>
-  <meta name="title" content="123 | Mogeko`s Blog">
+  <meta name="title" content="如何用hugo搭建个人博客 | Mogeko`s Blog">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -44,9 +44,9 @@
          "@id": "https:\/\/q936152787.github.io"
     },
     "articleSection" : "posts",
-    "name" : "123",
-    "headline" : "123",
-    "description" : "12345上山打老虎 23456老虎被打跑",
+    "name" : "如何用hugo搭建个人博客",
+    "headline" : "如何用hugo搭建个人博客",
+    "description" : "安装Hugo 二进制安装（推荐：简单、快速） 到 Hugo Releases 下载对应的操作系统版本的Hugo二进制文件（hugo或者hugo.exe) Mac下直接使用 Homebrew",
     "inLanguage" : "zh-cn",
     "author" : "sunyue",
     "creator" : "sunyue",
@@ -54,10 +54,10 @@
     "accountablePerson" : "sunyue",
     "copyrightHolder" : "sunyue",
     "copyrightYear" : "2020",
-    "datePublished": "2020-05-06 20:35:06 \x2b0800 CST",
-    "dateModified" : "2020-05-06 20:35:06 \x2b0800 CST",
-    "url" : "https:\/\/q936152787.github.io\/2020\/123\/",
-    "wordCount" : "20",
+    "datePublished": "2020-05-06 21:17:25 \x2b0800 CST",
+    "dateModified" : "2020-05-06 21:17:25 \x2b0800 CST",
+    "url" : "https:\/\/q936152787.github.io\/2020\/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2\/",
+    "wordCount" : "505",
     "keywords" : [  "Mogeko`s Blog"]
 }
 </script>
@@ -116,7 +116,7 @@
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">123</h1>
+        <h1 class="post-title" itemprop="name headline">如何用hugo搭建个人博客</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://q936152787.github.io" rel="author">sunyue</a> with ♥ 
                 <span class="post-time">
@@ -142,8 +142,51 @@
           
           
 
-          <h1 id="12345上山打老虎">12345上山打老虎</h1>
-<h1 id="23456老虎被打跑">23456老虎被打跑</h1>
+          <h1 id="安装hugo">安装Hugo</h1>
+<h2 id="二进制安装推荐简单快速">二进制安装（推荐：简单、快速）</h2>
+<p>到 Hugo Releases 下载对应的操作系统版本的Hugo二进制文件（hugo或者hugo.exe)</p>
+<p>Mac下直接使用 Homebrew 安装：</p>
+<pre><code>brew install hugo
+</code></pre>
+<h1 id="生成站点">生成站点</h1>
+<p>使用Hugo快速生成站点，比如希望生成到 /path/to/site 路径：</p>
+<pre><code>$ hugo new site /path/to/site  
+</code></pre>
+<p>这样就在 /path/to/site 目录里生成了初始站点，进去目录：</p>
+<pre><code>$ cd /path/to/site  
+</code></pre>
+<p>站点目录结构：</p>
+<pre><code>▸ archetypes/
+▸ content/
+▸ layouts/
+▸ static/
+config.toml  
+</code></pre>
+<h1 id="创建文章">创建文章</h1>
+<p>创建一个 about 页面:</p>
+<pre><code>$ hugo new about.md  
+</code></pre>
+<h1 id="安装皮肤">安装皮肤</h1>
+<p>到 皮肤列表 挑选一个心仪的皮肤，比如你觉得 Hyde 皮肤不错，找到相关的 GitHub 地址，创建目录 themes，在 themes 目录里把皮肤 git clone 下来：</p>
+<pre><code># 创建 themes 目录
+$ cd themes
+$ git clone https://github.com/spf13/hyde.git  
+</code></pre>
+<h1 id="运行hugo">运行Hugo</h1>
+<p>在你的站点根目录执行 Hugo 命令进行调试：
+$ hugo server &ndash;theme=hyde &ndash;buildDrafts</p>
+<h1 id="部署">部署</h1>
+<p>假设你需要部署在 GitHub Pages 上，首先在GitHub上创建一个Repository，命名为：coderzh.github.io （coderzh替换为你的github用户名）。</p>
+<p>在站点根目录执行 Hugo 命令生成最终页面：
+$ hugo &ndash;theme=hyde &ndash;baseUrl=&quot;http://coderzh.github.io/&rdquo;<br>
+（注意，以上命令并不会生成草稿页面，如果未生成任何文章，请去掉文章头部的 draft=true 再重新生成。）</p>
+<p>如果一切顺利，所有静态页面都会生成到 public 目录，将pubilc目录里所有文件 push 到刚创建的Repository的 master 分支。</p>
+<pre><code>$ cd public
+$ git init
+$ git remote add origin https://github.com/coderzh/coderzh.github.io.git
+$ git add -A
+$ git commit -m &quot;first commit&quot;
+$ git push -u origin master</code></pre>
 
     </div>
 
@@ -158,7 +201,7 @@
              
             <p class="copyright-item">
                     <span>Link:</span>
-                    <a href=https://q936152787.github.io/2020/123/>https://q936152787.github.io/2020/123/</span>
+                    <a href=https://q936152787.github.io/2020/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/>https://q936152787.github.io/2020/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</span>
             </p>
             
              
@@ -179,10 +222,8 @@
 
     <div class="post-nav">
         
-        <a href="https://q936152787.github.io/2020/about/" class="prev" rel="prev" title="About"><i class="iconfont icon-left"></i>&nbsp;About</a>
+        <a href="https://q936152787.github.io/2020/123/" class="prev" rel="prev" title="123"><i class="iconfont icon-left"></i>&nbsp;123</a>
          
-        
-        <a href="https://q936152787.github.io/2020/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="next" rel="next" title="如何用hugo搭建个人博客">如何用hugo搭建个人博客&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
